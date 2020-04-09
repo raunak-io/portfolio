@@ -1,0 +1,323 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #fef9f8;
+  color: crimson;
+  font-family: "oxygen", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+.home img {
+  width: 100%;
+  -webkit-filter: grayscale(60%) contrast(100%);
+  filter: grayscale(60%) contrast(190%) brightness(60%);
+}
+
+.folio img {
+  filter: grayscale(60%);
+}
+aside {
+  position: fixed;
+  background: crimson;
+  top: 0px;
+  left: 0px;
+  width: 120px;
+  height: 100%;
+  overflow: none;
+  z-index: 1;
+  text-align: center;
+  padding: 0;
+}
+aside img {
+  width: 100%;
+  margin-left: -180px;
+  margin-right: -180px;
+  margin-bottom: -4px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+aside a {
+  display: block;
+  padding: 10px 0;
+  color: whitesmoke;
+  transition: all 0.35s;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+}
+
+aside p {
+  margin: 0;
+  padding: 0;
+}
+aside a:hover {
+  background-color: #fef9f8;
+  color: crimson;
+}
+aside nav a:nth-child(2) {
+  background: #fef9f8;
+  color: crimson;
+}
+aside nav a:nth-child(2):hover {
+  background-color: crimson;
+  color: #fef9f8;
+}
+
+main {
+  max-width: 980px;
+  background: #fef9f8;
+  margin-left: 20%;
+  padding: 12px 50px 12px 50px;
+}
+header {
+  text-align: center;
+  letter-spacing: 2px;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 4em;
+  letter-spacing: 4px;
+}
+header h5 {
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: 4px;
+  color: lightcoral;
+}
+
+.folio,
+.about,
+.contact {
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.about h2,
+.folio h2,
+.contact h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  padding-bottom: 10px;
+  margin: 100px 0 0 0;
+  letter-spacing: 4px;
+}
+.about p {
+  color: lightcoral;
+}
+
+.about span {
+  font-weight: 600;
+  color: crimson;
+}
+
+.about strong {
+  font-weight: 600;
+  color: crimson;
+}
+.about h3 {
+  font-weight: 300;
+  margin: 50px 0;
+}
+.container {
+  width: 100%;
+  background-color: lightpink;
+}
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 30px;
+  color: lightpink;
+  background-color: crimson;
+}
+.angular {
+  width: 78%;
+}
+.htmlcss {
+  width: 80%;
+}
+.js {
+  width: 80%;
+}
+.mongo {
+  width: 85%;
+}
+.express {
+  width: 83%;
+}
+.photoshop {
+  width: 68%;
+}
+.folio {
+  color: lightcoral;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.folio p {
+  font-size: 0.875em;
+}
+.row-halves {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  -webkit-flex-pack: justify;
+}
+.row-halves .col {
+  width: 49%;
+}
+.col {
+  border: 1px solid lightpink;
+  background: lightpink;
+  color: lightcoral;
+  padding: 10px;
+}
+label {
+  color: lightcoral;
+}
+form input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border: 1px solid lightcoral;
+  background: transparent;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: lightcoral;
+}
+form input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid crimson;
+}
+input[type="submit"] {
+  background-color: transparent;
+  color: lightcoral;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: 1px solid lightpink;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+input[type="submit"] {
+  background-color: transparent;
+  color: lightsalmon;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: 1px solid lightpink;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+input[type="submit"]:hover {
+  background-color: crimson;
+  color: lightpink;
+}
+
+.contact .container {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background: 20px 0;
+}
+.footer {
+  border-top: 1px solid lightpink;
+}
+.top-bar {
+  padding: 20px;
+  text-align: center;
+}
+.top-bar a {
+  margin: 10px;
+  font-size: 2em;
+  color: crimson;
+  transition: all 0.35s;
+  display: inline-block;
+}
+
+.top-bar a:hover {
+  transform: scale(1.1);
+  color: coral;
+}
+.bottom-bar {
+  background: lightpink;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .row-halves {
+    display: block;
+  }
+  .row-halves .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 601px) {
+  aside {
+    display: none;
+  }
+  main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 25px;
+  }
+  header {
+    margin-top: 80px;
+  }
+  header h1 {
+    font-size: 3em;
+    line-height: 1.4em;
+  }
+
+  header h5 {
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+  .mobile-nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+  .mobile-nav a {
+    width: 100%;
+    color: lightcoral;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px 10px;
+    transition: all 0.35s;
+  }
+  .mobile-nav a:hover {
+    background: lightcoral;
+    color: crimson;
+  }
+}
+@media (min-width: 600px) {
+  .mobile-nav {
+    display: none;
+  }
+}
